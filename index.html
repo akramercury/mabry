@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Syte — a desk from 2002</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="era-2002">
+  <div class="crt" aria-hidden="true"></div>
+  <div class="aurora" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="brand">
+      <span class="year" id="brandYear">2002</span>
+      <h1 id="brandTitle">The Syte</h1>
+      <span class="sep">/</span>
+      <span class="now" id="brandNow">2026 rebuild</span>
+    </div>
+    <div class="switches">
+      <div class="langswitch eraswitch" role="group" aria-label="Era">
+        <button type="button" id="era2002" class="on">2002</button>
+        <button type="button" id="era2026">2026</button>
+      </div>
+      <div class="langswitch" role="group" aria-label="Language">
+        <button type="button" id="langEn" class="on">EN</button>
+        <button type="button" id="langAr">مصري</button>
+      </div>
+      <time class="clock" id="clock"></time>
+    </div>
+    <p class="status" id="status">Mabry is waiting on the desk.</p>
+  </header>
+
+  <main class="stage-wrap">
+    <section class="desk" id="desk" aria-label="Desktop of objects">
+      <button class="obj trash" data-panel="bin"
+        data-line="The bin. I never remembered what this was for either. Maybe the ideas we were brave enough to throw away."
+        data-line-ar="الزبالة دي. أنا كمان مش فاكر كانت ليه. يمكن للأفكار اللي بنرميها بجرأة."
+        data-voice-ar="assets/ar_bin.mp3">
+        <img data-art="bin" alt="" />
+        <span class="label" data-en="The Bin" data-ar="الزبالة">The Bin</span>
+      </button>
+
+      <button class="obj frame" data-panel="memories"
+        data-line="The frame. About, memories, the person who drew all this when the web still felt like a room."
+        data-line-ar="البرواز. عنه، والذكريات، والراجل اللي رسم كل ده وأيام النت كان لسه أوضة."
+        data-voice-ar="assets/ar_memories.mp3">
+        <img data-art="frame" alt="" />
+        <span class="label" data-en="Memories" data-ar="الذكريات">Memories</span>
+      </button>
+
+      <button class="obj counter" data-panel="counter"
+        data-line="The counter. In 2002 this would have ticked every visitor. Now it also counts the years we waited."
+        data-line-ar="العدّاد. سنة ألفين واتنين كان بيعد كل زائر. دلوقتي بيعد كمان السنين اللي استنيناها."
+        data-voice-ar="assets/ar_counter.mp3">
+        <img data-art="counter" alt="" />
+        <span class="count-badge" id="liveCount">0</span>
+        <span class="label" data-en="Counter" data-ar="العدّاد">Counter</span>
+      </button>
+
+      <button class="obj radio" data-panel="radio"
+        data-line="The radio. Music, noise, the station you leave on while you draw."
+        data-line-ar="الراديو. موسيقى، دوشة، المحطة اللي بتسيبها شغالة وأنت بترسم."
+        data-voice-ar="assets/ar_radio.mp3">
+        <img data-art="radio" alt="" />
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="label" data-en="Radio" data-ar="الراديو">Radio</span>
+      </button>
+
+      <button class="obj phone" data-panel="phone"
+        data-line="The handset. Contacts. If you want to reach the person who built this desk, start here."
+        data-line-ar="السماعة. المعارف. لو عايز توصل لصاحب المكتب، ابدأ من هنا."
+        data-voice-ar="assets/ar_phone.mp3">
+        <img data-art="phone" alt="" />
+        <span class="label" data-en="Contacts" data-ar="المعارف">Contacts</span>
+      </button>
+
+      <button class="obj notebook" data-panel="notebook"
+        data-line="The notebook. Projects, the blog, pages that were supposed to fill up."
+        data-line-ar="الكراسة. المشاريع، المدونة، الصفحات اللي كانت المفروض تتملي."
+        data-voice-ar="assets/ar_notebook.mp3">
+        <img data-art="notebook" alt="" />
+        <span class="label" data-en="Notebook" data-ar="الكراسة">Notebook</span>
+      </button>
+
+      <button class="obj paper" data-panel="paper"
+        data-line="A blank sheet. Write something. The site was always supposed to let you leave a mark."
+        data-line-ar="ورقة فاضية. اكتب حاجة. الموقع كان دايماً المفروض يسيبك تسيب أثر."
+        data-voice-ar="assets/ar_paper.mp3">
+        <img data-art="paper" alt="" />
+        <span class="label" data-en="Paper" data-ar="الورقة">Paper</span>
+      </button>
+
+      <button class="obj glasses" data-panel="vision"
+        data-line="The glasses. Vision. How this desk was meant to be seen — not a homepage, a place."
+        data-line-ar="النظارة. الرؤية. المكتب ده مكان، مش صفحة رئيسية."
+        data-voice-ar="assets/ar_vision.mp3">
+        <img data-art="glasses" alt="" />
+        <span class="label" data-en="Vision" data-ar="الرؤية">Vision</span>
+      </button>
+
+      <button class="obj mabry" data-panel="mabry"
+        data-line="That's me. Mabry. I was going to walk you through every drawer of this desk."
+        data-line-ar="ده أنا. مابري. كنت هلف بيك على كل درج في المكتب."
+        data-voice-ar="assets/ar_mabry.mp3">
+        <img data-art="mabry" alt="" />
+        <span class="label" data-en="Mabry" data-ar="مابري">Mabry</span>
+      </button>
+    </section>
+  </main>
+
+  <aside class="hint" id="hint">Hover an object. Click to open it.</aside>
+
+  <section class="panel" id="panel" hidden>
+    <button class="close" id="closePanel" aria-label="Close">✕</button>
+    <div class="panel-body" id="panelBody"></div>
+  </section>
+
+  <aside class="chatdock" id="chatdock">
+    <div class="chathead">
+      <img id="dockFace" data-art="dock" alt="" />
+      <div>
+        <strong>Mabry</strong>
+        <small id="dockSub">desk helper since 2002</small>
+      </div>
+      <button type="button" id="playVoice" title="Hear Mabry">♪</button>
+    </div>
+    <div class="chatlog" id="chatlog"></div>
+    <form id="chatform">
+      <input id="chatinput" placeholder="Ask Mabry…" autocomplete="off" />
+      <button type="submit">→</button>
+    </form>
+    <audio id="voice" src="assets/mabry_welcome.mp3"></audio>
+    <audio id="voiceAr" src="assets/mabry_welcome_ar.mp3"></audio>
+    <audio id="voiceClip"></audio>
+  </aside>
+
+  <script src="art.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/assets/*", "/art.js", "/app.js", "/styles.css", "/*.mp3", "/*.png", "/*.gif", "/*.jpg"]
+  },
+  "mimeTypes": {
+    ".js": "text/javascript",
+    ".mjs": "text/javascript",
+    ".json": "application/json",
+    ".css": "text/css",
+    ".mp3": "audio/mpeg"
+  },
+  "globalHeaders": {
+    "Cache-Control": "public, max-age=300"
+  }
+}
